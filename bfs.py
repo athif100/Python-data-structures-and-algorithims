@@ -17,10 +17,14 @@ three=node(None,None,3)
 four=node(None,None,4)
 five=node(None,None,5)
 six=node(None,None,6)
+seven=node(None,None,7)
+eight=node(None,None,8)
 two.left=three
 two.right=four
 three.left=five
 three.right=six
+four.right=seven
+four.left=eight
 print(two.left.right.data)
 #Breathfirstsearch
 Record=[two]
