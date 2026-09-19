@@ -21,16 +21,19 @@ def Compare(Left,Right):
     j=0
     while i<len(Left)and j<len(Right):
 
-        if Left[i]<Right[j]:
+        if Left[i]<=Right[j]:
             Sorted_list.append(Left[i])
             i+=1
-        elif Right[j]<Left[i]:
+        elif Right[j]<=Left[i]:
             Sorted_list.append(Right[j])
             j+=1
     Sorted_list.extend(Left[i:])
     Sorted_list.extend(Right[j:])
     return(Sorted_list)
-Ans=Merge_sort([47, 392, 118, 275, 64, 431, 209, 356, 17, 483,
-142, 298, 75, 411, 236, 89, 327, 154, 468, 51,
-213, 374, 102, 289, 445, 33, 196, 351, 127, 492])
+import random
+Mylist=[]
+for number in range(4000):
+    Mylist.append(random.randint(0,1000))
+
+Ans=Merge_sort(Mylist)
 print(Ans)

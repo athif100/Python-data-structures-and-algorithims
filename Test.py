@@ -50,3 +50,8 @@ equipped_weapon = Inventory[0]
 
 print(Inventory)
 print(equipped_weapon)
+import random
+Mylist=[]
+for number in range(500):
+    Mylist.append(random.randint(0,1000))
+print(Mylist)
