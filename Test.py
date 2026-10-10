@@ -55,3 +55,4 @@ Mylist=[]
 for number in range(500):
     Mylist.append(random.randint(0,1000))
 print(Mylist)
+print("a"=="A")
